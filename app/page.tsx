@@ -217,7 +217,7 @@ export default function Portfolio() {
             </div>
             <div className="flex items-center gap-4 p-4 bg-blue-600 text-white">
               <Cloud className="w-5 h-5"/>
-              <span className="text-sm font-black uppercase tracking-wider text-center flex-1">AWS Certified Solutions Architect – Associate</span>
+              <span className="text-sm font-black uppercase tracking-wider text-center flex-1">AWS Certified Cloud Practitioner</span>
             </div>
           </div>
         </section>
