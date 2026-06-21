@@ -235,7 +235,7 @@ export default function Portfolio() {
               </div>
             </div>
             <div className="md:text-right">
-              <p className="font-black text-blue-600 text-xl tracking-tighter">7.62 CGPA</p>
+              <p className="font-black text-blue-600 text-xl tracking-tighter">7.63 CGPA</p>
               <p className="text-slate-400 text-xs font-bold uppercase tracking-widest mt-1">Expected May 2027</p>
             </div>
           </div>
