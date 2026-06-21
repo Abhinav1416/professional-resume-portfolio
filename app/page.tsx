@@ -180,7 +180,7 @@ export default function Portfolio() {
                 <h3 className="text-sm font-bold uppercase tracking-wider">Languages & Frontend</h3>
               </div>
               <p className="text-sm text-slate-600 dark:text-slate-400 leading-loose font-medium">
-                Java, C++, Python, React.js
+                Java, Python, React.js
               </p>
             </div>
             <div className="space-y-4">
