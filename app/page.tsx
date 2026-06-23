@@ -57,7 +57,7 @@ export default function Portfolio() {
             <a href="https://github.com/Abhinav1416/" target="_blank" className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full text-xs font-bold hover:border-blue-600 transition-all">
               <Github className="w-4 h-4"/> GitHub
             </a>
-            <a href="https://www.linkedin.com/in/gudipudi-abhinav-a04a1728b/" target="_blank" className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full text-xs font-bold hover:border-blue-600 transition-all">
+            <a href="https://www.linkedin.com/in/gudipudi-sasanka-abhinav-a04a1728b/" target="_blank" className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full text-xs font-bold hover:border-blue-600 transition-all">
               <Linkedin className="w-4 h-4"/> LinkedIn
             </a>
             <a href="https://leetcode.com/u/HashMap1416/" target="_blank" className="flex items-center gap-2 px-4 py-2 bg-orange-50 dark:bg-orange-900/10 border border-orange-200 dark:border-orange-800 rounded-full text-xs font-bold text-orange-700 dark:text-orange-400 hover:scale-105 transition-all">
