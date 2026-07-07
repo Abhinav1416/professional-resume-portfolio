@@ -205,7 +205,7 @@ export default function Portfolio() {
                 <Trophy className="w-4 h-4 text-blue-500"/>
                 <span className="text-sm font-bold">Codeforces Max Rating</span>
               </div>
-              <span className="text-lg font-black text-blue-600">1577 <span className="text-xs text-slate-400">(Specialist)</span></span>
+              <span className="text-lg font-black text-blue-600">1516 <span className="text-xs text-slate-400">(Specialist)</span></span>
             </div>
             {/* LeetCode Knight */}
             <div className="flex justify-between items-center p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
