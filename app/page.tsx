@@ -18,25 +18,25 @@ import {
   Database,
   Terminal,
   BarChart3,
-  Download // <-- Added Download icon
+  Download
 } from "lucide-react"
 
 export default function Portfolio() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 font-sans selection:bg-blue-100">
-      
-      {/* Navigation */}
       <nav className="sticky top-0 z-50 border-b bg-white/70 backdrop-blur-lg dark:bg-slate-950/70">
         <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
-          {/* Logo / Name space if you want one later */}
           <div></div> 
           
           <div className="flex items-center gap-6 text-xs font-bold uppercase tracking-widest text-slate-500">
             <a href="#experience" className="hover:text-blue-600 transition-colors hidden sm:block">Experience</a>
             <a href="#projects" className="hover:text-blue-600 transition-colors hidden sm:block">Projects</a>
             <a href="#skills" className="hover:text-blue-600 transition-colors hidden sm:block">Skills</a>
-            {/* Sticky Resume Link */}
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-blue-600 hover:text-blue-700 transition-colors">
+            <a 
+              href="/Gudipudi_Abhinav_Resume.pdf" 
+              download="Gudipudi_Abhinav_Resume.pdf" 
+              className="flex items-center gap-1.5 text-blue-600 hover:text-blue-700 transition-colors"
+            >
               <Download className="w-3.5 h-3.5" /> Resume
             </a>
           </div>
@@ -44,8 +44,6 @@ export default function Portfolio() {
       </nav>
 
       <main className="max-w-3xl mx-auto px-6 py-20 space-y-28">
-        
-        {/* Hero Section */}
         <section className="space-y-8">
           <div className="space-y-3">
             <h1 className="text-5xl font-black tracking-tight text-slate-900 dark:text-white">
@@ -59,30 +57,25 @@ export default function Portfolio() {
           <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-400">
             I focus on engineering high performance backend systems with Java Spring Boot and orchestrating scalable cloud infrastructure on AWS.
           </p>
-
-          {/* Highly Visible CTA & Social Links */}
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            
-            {/* Primary CTA: Download Resume */}
             <a 
-              href="/resume.pdf" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="/Gudipudi_Abhinav_Resume.pdf" 
+              download="Gudipudi_Abhinav_Resume.pdf"
               className="flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-full text-sm font-bold hover:bg-blue-700 hover:scale-105 transition-all shadow-lg shadow-blue-600/20 mr-2"
             >
-              <Download className="w-4 h-4"/> View Resume
+              <Download className="w-4 h-4"/> Download Resume
             </a>
 
-            <a href="https://github.com/Abhinav1416/" target="_blank" className="flex items-center gap-2 px-4 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full text-xs font-bold hover:border-blue-600 transition-all">
+            <a href="https://github.com/Abhinav1416/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full text-xs font-bold hover:border-blue-600 transition-all">
               <Github className="w-4 h-4"/> GitHub
             </a>
-            <a href="https://www.linkedin.com/in/gudipudi-sasanka-abhinav-a04a1728b/" target="_blank" className="flex items-center gap-2 px-4 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full text-xs font-bold hover:border-blue-600 transition-all">
+            <a href="https://www.linkedin.com/in/gudipudi-sasanka-abhinav-a04a1728b/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full text-xs font-bold hover:border-blue-600 transition-all">
               <Linkedin className="w-4 h-4"/> LinkedIn
             </a>
-            <a href="https://leetcode.com/u/HashMap1416/" target="_blank" className="flex items-center gap-2 px-4 py-2.5 bg-orange-50 dark:bg-orange-900/10 border border-orange-200 dark:border-orange-800 rounded-full text-xs font-bold text-orange-700 dark:text-orange-400 hover:scale-105 transition-all">
+            <a href="https://leetcode.com/u/HashMap1416/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2.5 bg-orange-50 dark:bg-orange-900/10 border border-orange-200 dark:border-orange-800 rounded-full text-xs font-bold text-orange-700 dark:text-orange-400 hover:scale-105 transition-all">
               <Code2 className="w-4 h-4"/> LeetCode (Knight)
             </a>
-            <a href="https://codeforces.com/profile/HashMap1416" target="_blank" className="flex items-center gap-2 px-4 py-2.5 bg-blue-50 dark:bg-blue-900/10 border border-blue-200 dark:border-blue-800 rounded-full text-xs font-bold text-blue-700 dark:text-blue-400 hover:scale-105 transition-all">
+            <a href="https://codeforces.com/profile/HashMap1416" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2.5 bg-blue-50 dark:bg-blue-900/10 border border-blue-200 dark:border-blue-800 rounded-full text-xs font-bold text-blue-700 dark:text-blue-400 hover:scale-105 transition-all">
               <BarChart3 className="w-4 h-4"/> Codeforces (Specialist)
             </a>
             <a href="mailto:gudipudiabhinav2005@gmail.com" className="p-2.5 text-slate-400 hover:text-blue-600 transition-colors">
@@ -91,7 +84,6 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Experience Section */}
         <section id="experience" className="space-y-10">
           <h2 className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 border-b pb-4">Experience</h2>
           <div className="space-y-12">
@@ -118,15 +110,13 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Projects Section */}
         <section id="projects" className="space-y-10">
           <h2 className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 border-b pb-4">Projects</h2>
           <div className="grid gap-8">
-            {/* CodeDuels */}
             <div className="group relative border-l-4 border-slate-200 pl-8 py-2 hover:border-blue-600 transition-all">
               <div className="flex justify-between items-start mb-2">
                 <h3 className="text-xl font-bold group-hover:text-blue-600 transition-colors">CodeDuels</h3>
-                <a href="https://github.com/Abhinav1416/coding-platform" target="_blank" className="text-slate-400 hover:text-blue-600"><ExternalLink className="w-5 h-5"/></a>
+                <a href="https://github.com/Abhinav1416/coding-platform" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600"><ExternalLink className="w-5 h-5"/></a>
               </div>
               <ul className="space-y-2 text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
                 <li>• Built a real-time 1v1 coding platform serving <strong>2,000+ users</strong> and 2,500+ matches using WebSockets and Judge0.</li>
@@ -138,11 +128,10 @@ export default function Portfolio() {
               </div>
             </div>
 
-            {/* CommerceCore */}
             <div className="group relative border-l-4 border-slate-200 pl-8 py-2 hover:border-blue-600 transition-all">
               <div className="flex justify-between items-start mb-2">
                 <h3 className="text-xl font-bold group-hover:text-blue-600 transition-colors">CommerceCore</h3>
-                <a href="https://github.com/Abhinav1416/CommerceCore-Microservices" target="_blank" className="text-slate-400 hover:text-blue-600"><ExternalLink className="w-5 h-5"/></a>
+                <a href="https://github.com/Abhinav1416/CommerceCore-Microservices" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600"><ExternalLink className="w-5 h-5"/></a>
               </div>
               <ul className="space-y-2 text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
                 <li>• Architected modular microservices for products, users, and orders with independent deployability using Docker.</li>
@@ -154,11 +143,10 @@ export default function Portfolio() {
               </div>
             </div>
 
-            {/* LeetCode GIF Reactions */}
             <div className="group relative border-l-4 border-slate-200 pl-8 py-2 hover:border-blue-600 transition-all">
               <div className="flex justify-between items-start mb-2">
                 <h3 className="text-xl font-bold group-hover:text-blue-600 transition-colors">LeetCode GIF Reactions</h3>
-                <a href="https://github.com/Abhinav1416/leetcode-reactions-extension" target="_blank" className="text-slate-400 hover:text-blue-600"><ExternalLink className="w-5 h-5"/></a>
+                <a href="https://github.com/Abhinav1416/leetcode-reactions-extension" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600"><ExternalLink className="w-5 h-5"/></a>
               </div>
               <ul className="space-y-2 text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
                 <li>• Developed a Manifest V3 extension detecting successful submissions to trigger custom celebration overlays.</li>
@@ -171,7 +159,6 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Skills Section */}
         <section id="skills" className="space-y-10">
           <h2 className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 border-b pb-4">Skills</h2>
           <div className="grid sm:grid-cols-2 gap-x-12 gap-y-10">
@@ -214,11 +201,9 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Achievements Section */}
         <section className="space-y-10">
           <h2 className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 border-b pb-4">Achievements</h2>
           <div className="grid gap-4">
-            {/* Codeforces Specialist */}
             <div className="flex justify-between items-center p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
               <div className="flex items-center gap-3">
                 <Trophy className="w-4 h-4 text-blue-500"/>
@@ -226,7 +211,6 @@ export default function Portfolio() {
               </div>
               <span className="text-lg font-black text-blue-600">1516 <span className="text-xs text-slate-400">(Specialist)</span></span>
             </div>
-            {/* LeetCode Knight */}
             <div className="flex justify-between items-center p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
               <div className="flex items-center gap-3">
                 <Trophy className="w-4 h-4 text-orange-500"/>
@@ -241,7 +225,6 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Education Section */}
         <section className="pt-10 border-t border-slate-200 dark:border-slate-800 pb-16">
           <div className="flex flex-col md:flex-row justify-between gap-6">
             <div className="flex gap-5">
