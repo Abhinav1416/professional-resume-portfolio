@@ -24,6 +24,7 @@ import {
 export default function Portfolio() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 font-sans selection:bg-blue-100">
+      
       <nav className="sticky top-0 z-50 border-b bg-white/70 backdrop-blur-lg dark:bg-slate-950/70">
         <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
           <div></div> 
@@ -44,6 +45,7 @@ export default function Portfolio() {
       </nav>
 
       <main className="max-w-3xl mx-auto px-6 py-20 space-y-28">
+        
         <section className="space-y-8">
           <div className="space-y-3">
             <h1 className="text-5xl font-black tracking-tight text-slate-900 dark:text-white">
@@ -57,13 +59,24 @@ export default function Portfolio() {
           <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-400">
             I focus on engineering high performance backend systems with Java Spring Boot and orchestrating scalable cloud infrastructure on AWS.
           </p>
+
           <div className="flex flex-wrap items-center gap-3 pt-2">
+            
+            <a 
+              href="/Gudipudi_Abhinav_Resume.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-full text-sm font-bold hover:bg-blue-700 hover:scale-105 transition-all shadow-lg shadow-blue-600/20"
+            >
+              <ExternalLink className="w-4 h-4"/> View Resume
+            </a>
+
             <a 
               href="/Gudipudi_Abhinav_Resume.pdf" 
               download="Gudipudi_Abhinav_Resume.pdf"
-              className="flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-full text-sm font-bold hover:bg-blue-700 hover:scale-105 transition-all shadow-lg shadow-blue-600/20 mr-2"
+              className="flex items-center gap-2 px-6 py-2.5 bg-white dark:bg-slate-900 border-2 border-blue-600 text-blue-600 dark:text-blue-400 rounded-full text-sm font-bold hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:scale-105 transition-all mr-2"
             >
-              <Download className="w-4 h-4"/> Download Resume
+              <Download className="w-4 h-4"/> Download
             </a>
 
             <a href="https://github.com/Abhinav1416/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full text-xs font-bold hover:border-blue-600 transition-all">
