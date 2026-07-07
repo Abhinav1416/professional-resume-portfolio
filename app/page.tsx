@@ -17,7 +17,8 @@ import {
   GraduationCap,
   Database,
   Terminal,
-  BarChart3
+  BarChart3,
+  Download // <-- Added Download icon
 } from "lucide-react"
 
 export default function Portfolio() {
@@ -26,11 +27,18 @@ export default function Portfolio() {
       
       {/* Navigation */}
       <nav className="sticky top-0 z-50 border-b bg-white/70 backdrop-blur-lg dark:bg-slate-950/70">
-        <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-end">
-          <div className="flex gap-8 text-xs font-bold uppercase tracking-widest text-slate-500">
-            <a href="#experience" className="hover:text-blue-600 transition-colors">Experience</a>
-            <a href="#projects" className="hover:text-blue-600 transition-colors">Projects</a>
-            <a href="#skills" className="hover:text-blue-600 transition-colors">Skills</a>
+        <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
+          {/* Logo / Name space if you want one later */}
+          <div></div> 
+          
+          <div className="flex items-center gap-6 text-xs font-bold uppercase tracking-widest text-slate-500">
+            <a href="#experience" className="hover:text-blue-600 transition-colors hidden sm:block">Experience</a>
+            <a href="#projects" className="hover:text-blue-600 transition-colors hidden sm:block">Projects</a>
+            <a href="#skills" className="hover:text-blue-600 transition-colors hidden sm:block">Skills</a>
+            {/* Sticky Resume Link */}
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-blue-600 hover:text-blue-700 transition-colors">
+              <Download className="w-3.5 h-3.5" /> Resume
+            </a>
           </div>
         </div>
       </nav>
@@ -52,21 +60,32 @@ export default function Portfolio() {
             I focus on engineering high performance backend systems with Java Spring Boot and orchestrating scalable cloud infrastructure on AWS.
           </p>
 
-          {/* Highly Visible Social & Profile Links */}
+          {/* Highly Visible CTA & Social Links */}
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <a href="https://github.com/Abhinav1416/" target="_blank" className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full text-xs font-bold hover:border-blue-600 transition-all">
+            
+            {/* Primary CTA: Download Resume */}
+            <a 
+              href="/resume.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-full text-sm font-bold hover:bg-blue-700 hover:scale-105 transition-all shadow-lg shadow-blue-600/20 mr-2"
+            >
+              <Download className="w-4 h-4"/> View Resume
+            </a>
+
+            <a href="https://github.com/Abhinav1416/" target="_blank" className="flex items-center gap-2 px-4 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full text-xs font-bold hover:border-blue-600 transition-all">
               <Github className="w-4 h-4"/> GitHub
             </a>
-            <a href="https://www.linkedin.com/in/gudipudi-sasanka-abhinav-a04a1728b/" target="_blank" className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full text-xs font-bold hover:border-blue-600 transition-all">
+            <a href="https://www.linkedin.com/in/gudipudi-sasanka-abhinav-a04a1728b/" target="_blank" className="flex items-center gap-2 px-4 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full text-xs font-bold hover:border-blue-600 transition-all">
               <Linkedin className="w-4 h-4"/> LinkedIn
             </a>
-            <a href="https://leetcode.com/u/HashMap1416/" target="_blank" className="flex items-center gap-2 px-4 py-2 bg-orange-50 dark:bg-orange-900/10 border border-orange-200 dark:border-orange-800 rounded-full text-xs font-bold text-orange-700 dark:text-orange-400 hover:scale-105 transition-all">
+            <a href="https://leetcode.com/u/HashMap1416/" target="_blank" className="flex items-center gap-2 px-4 py-2.5 bg-orange-50 dark:bg-orange-900/10 border border-orange-200 dark:border-orange-800 rounded-full text-xs font-bold text-orange-700 dark:text-orange-400 hover:scale-105 transition-all">
               <Code2 className="w-4 h-4"/> LeetCode (Knight)
             </a>
-            <a href="https://codeforces.com/profile/HashMap1416" target="_blank" className="flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-900/10 border border-blue-200 dark:border-blue-800 rounded-full text-xs font-bold text-blue-700 dark:text-blue-400 hover:scale-105 transition-all">
+            <a href="https://codeforces.com/profile/HashMap1416" target="_blank" className="flex items-center gap-2 px-4 py-2.5 bg-blue-50 dark:bg-blue-900/10 border border-blue-200 dark:border-blue-800 rounded-full text-xs font-bold text-blue-700 dark:text-blue-400 hover:scale-105 transition-all">
               <BarChart3 className="w-4 h-4"/> Codeforces (Specialist)
             </a>
-            <a href="mailto:gudipudiabhinav2005@gmail.com" className="p-2 text-slate-400 hover:text-blue-600 transition-colors">
+            <a href="mailto:gudipudiabhinav2005@gmail.com" className="p-2.5 text-slate-400 hover:text-blue-600 transition-colors">
               <Mail className="w-5 h-5"/>
             </a>
           </div>
