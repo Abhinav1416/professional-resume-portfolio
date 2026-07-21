@@ -4,16 +4,16 @@ import React from "react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { 
-  Github, 
-  Linkedin, 
-  Mail, 
-  ExternalLink, 
-  Code2, 
-  Server, 
-  Cloud, 
-  Trophy, 
-  Briefcase, 
+import {
+  Github,
+  Linkedin,
+  Mail,
+  ExternalLink,
+  Code2,
+  Server,
+  Cloud,
+  Trophy,
+  Briefcase,
   GraduationCap,
   Database,
   Terminal,
@@ -24,18 +24,18 @@ import {
 export default function Portfolio() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 font-sans selection:bg-blue-100">
-      
+
       <nav className="sticky top-0 z-50 border-b bg-white/70 backdrop-blur-lg dark:bg-slate-950/70">
         <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
-          <div></div> 
-          
+          <div></div>
+
           <div className="flex items-center gap-6 text-xs font-bold uppercase tracking-widest text-slate-500">
             <a href="#experience" className="hover:text-blue-600 transition-colors hidden sm:block">Experience</a>
             <a href="#projects" className="hover:text-blue-600 transition-colors hidden sm:block">Projects</a>
             <a href="#skills" className="hover:text-blue-600 transition-colors hidden sm:block">Skills</a>
-            <a 
-              href="/Gudipudi_Abhinav_Resume.pdf" 
-              download="Gudipudi_Abhinav_Resume.pdf" 
+            <a
+              href="/Gudipudi_Abhinav_Latest_Resume.pdf"
+              download="Gudipudi_Abhinav_Resume.pdf"
               className="flex items-center gap-1.5 text-blue-600 hover:text-blue-700 transition-colors"
             >
               <Download className="w-3.5 h-3.5" /> Resume
@@ -45,7 +45,7 @@ export default function Portfolio() {
       </nav>
 
       <main className="max-w-3xl mx-auto px-6 py-20 space-y-28">
-        
+
         <section className="space-y-8">
           <div className="space-y-3">
             <h1 className="text-5xl font-black tracking-tight text-slate-900 dark:text-white">
@@ -55,44 +55,54 @@ export default function Portfolio() {
               Software Engineer
             </p>
           </div>
-          
+
           <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-400">
             I focus on engineering high performance backend systems with Java Spring Boot and orchestrating scalable cloud infrastructure on AWS.
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            
-            <a 
-              href="/Gudipudi_Abhinav_Resume.pdf" 
-              target="_blank" 
+
+            <a
+              href="/Gudipudi_Abhinav_Latest_Resume.pdf"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white rounded-full text-sm font-bold hover:bg-blue-700 hover:scale-105 transition-all shadow-lg shadow-blue-600/20"
             >
-              <ExternalLink className="w-4 h-4"/> View Resume
+              <ExternalLink className="w-4 h-4" /> View Resume
             </a>
 
-            <a 
-              href="/Gudipudi_Abhinav_Resume.pdf" 
+            <a
+              href="/Gudipudi_Abhinav_Latest_Resume.pdf"
               download="Gudipudi_Abhinav_Resume.pdf"
               className="flex items-center gap-2 px-6 py-2.5 bg-white dark:bg-slate-900 border-2 border-blue-600 text-blue-600 dark:text-blue-400 rounded-full text-sm font-bold hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:scale-105 transition-all mr-2"
             >
-              <Download className="w-4 h-4"/> Download
+              <Download className="w-4 h-4" /> Download
             </a>
 
             <a href="https://github.com/Abhinav1416/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full text-xs font-bold hover:border-blue-600 transition-all">
-              <Github className="w-4 h-4"/> GitHub
+              <Github className="w-4 h-4" /> GitHub
             </a>
             <a href="https://www.linkedin.com/in/gudipudi-sasanka-abhinav-a04a1728b/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full text-xs font-bold hover:border-blue-600 transition-all">
-              <Linkedin className="w-4 h-4"/> LinkedIn
+              <Linkedin className="w-4 h-4" /> LinkedIn
+            </a>
+            <a
+              href="https://www.credly.com/badges/cafe8ba1-3ad2-4ac8-8306-59142cd1128e"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2.5 bg-blue-50 dark:bg-blue-900/10 border border-blue-200 dark:border-blue-800 rounded-full text-xs font-bold text-blue-700 dark:text-blue-400 hover:scale-105 transition-all"
+            >
+              <Cloud className="w-4 h-4" />
+              AWS Certified
+              <ExternalLink className="w-3 h-3" />
             </a>
             <a href="https://leetcode.com/u/HashMap1416/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2.5 bg-orange-50 dark:bg-orange-900/10 border border-orange-200 dark:border-orange-800 rounded-full text-xs font-bold text-orange-700 dark:text-orange-400 hover:scale-105 transition-all">
-              <Code2 className="w-4 h-4"/> LeetCode (Knight)
+              <Code2 className="w-4 h-4" /> LeetCode (Knight)
             </a>
             <a href="https://codeforces.com/profile/HashMap1416" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2.5 bg-blue-50 dark:bg-blue-900/10 border border-blue-200 dark:border-blue-800 rounded-full text-xs font-bold text-blue-700 dark:text-blue-400 hover:scale-105 transition-all">
-              <BarChart3 className="w-4 h-4"/> Codeforces (Specialist)
+              <BarChart3 className="w-4 h-4" /> Codeforces (Specialist)
             </a>
             <a href="mailto:gudipudiabhinav2005@gmail.com" className="p-2.5 text-slate-400 hover:text-blue-600 transition-colors">
-              <Mail className="w-5 h-5"/>
+              <Mail className="w-5 h-5" />
             </a>
           </div>
         </section>
@@ -129,7 +139,7 @@ export default function Portfolio() {
             <div className="group relative border-l-4 border-slate-200 pl-8 py-2 hover:border-blue-600 transition-all">
               <div className="flex justify-between items-start mb-2">
                 <h3 className="text-xl font-bold group-hover:text-blue-600 transition-colors">CodeDuels</h3>
-                <a href="https://github.com/Abhinav1416/coding-platform" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600"><ExternalLink className="w-5 h-5"/></a>
+                <a href="https://github.com/Abhinav1416/coding-platform" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600"><ExternalLink className="w-5 h-5" /></a>
               </div>
               <ul className="space-y-2 text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
                 <li>• Built a real-time 1v1 coding platform serving <strong>2,000+ users</strong> and 2,500+ matches using WebSockets and Judge0.</li>
@@ -144,7 +154,7 @@ export default function Portfolio() {
             <div className="group relative border-l-4 border-slate-200 pl-8 py-2 hover:border-blue-600 transition-all">
               <div className="flex justify-between items-start mb-2">
                 <h3 className="text-xl font-bold group-hover:text-blue-600 transition-colors">CommerceCore</h3>
-                <a href="https://github.com/Abhinav1416/CommerceCore-Microservices" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600"><ExternalLink className="w-5 h-5"/></a>
+                <a href="https://github.com/Abhinav1416/CommerceCore-Microservices" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600"><ExternalLink className="w-5 h-5" /></a>
               </div>
               <ul className="space-y-2 text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
                 <li>• Architected modular microservices for products, users, and orders with independent deployability using Docker.</li>
@@ -159,7 +169,7 @@ export default function Portfolio() {
             <div className="group relative border-l-4 border-slate-200 pl-8 py-2 hover:border-blue-600 transition-all">
               <div className="flex justify-between items-start mb-2">
                 <h3 className="text-xl font-bold group-hover:text-blue-600 transition-colors">LeetCode GIF Reactions</h3>
-                <a href="https://github.com/Abhinav1416/leetcode-reactions-extension" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600"><ExternalLink className="w-5 h-5"/></a>
+                <a href="https://github.com/Abhinav1416/leetcode-reactions-extension" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600"><ExternalLink className="w-5 h-5" /></a>
               </div>
               <ul className="space-y-2 text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
                 <li>• Developed a Manifest V3 extension detecting successful submissions to trigger custom celebration overlays.</li>
@@ -177,7 +187,7 @@ export default function Portfolio() {
           <div className="grid sm:grid-cols-2 gap-x-12 gap-y-10">
             <div className="space-y-4">
               <div className="flex items-center gap-2 text-blue-600">
-                <Server className="w-4 h-4"/>
+                <Server className="w-4 h-4" />
                 <h3 className="text-sm font-bold uppercase tracking-wider">Backend</h3>
               </div>
               <p className="text-sm text-slate-600 dark:text-slate-400 leading-loose font-medium">
@@ -186,7 +196,7 @@ export default function Portfolio() {
             </div>
             <div className="space-y-4">
               <div className="flex items-center gap-2 text-blue-600">
-                <Terminal className="w-4 h-4"/>
+                <Terminal className="w-4 h-4" />
                 <h3 className="text-sm font-bold uppercase tracking-wider">DevOps & Tools</h3>
               </div>
               <p className="text-sm text-slate-600 dark:text-slate-400 leading-loose font-medium">
@@ -195,16 +205,16 @@ export default function Portfolio() {
             </div>
             <div className="space-y-4">
               <div className="flex items-center gap-2 text-blue-600">
-                <Code2 className="w-4 h-4"/>
+                <Code2 className="w-4 h-4" />
                 <h3 className="text-sm font-bold uppercase tracking-wider">Languages & Frontend</h3>
               </div>
               <p className="text-sm text-slate-600 dark:text-slate-400 leading-loose font-medium">
-                Java, Python, React.js
+                Java, Python, React.js(Basic)
               </p>
             </div>
             <div className="space-y-4">
               <div className="flex items-center gap-2 text-blue-600">
-                <Database className="w-4 h-4"/>
+                <Database className="w-4 h-4" />
                 <h3 className="text-sm font-bold uppercase tracking-wider">Databases & Security</h3>
               </div>
               <p className="text-sm text-slate-600 dark:text-slate-400 leading-loose font-medium">
@@ -219,22 +229,34 @@ export default function Portfolio() {
           <div className="grid gap-4">
             <div className="flex justify-between items-center p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
               <div className="flex items-center gap-3">
-                <Trophy className="w-4 h-4 text-blue-500"/>
+                <Trophy className="w-4 h-4 text-blue-500" />
                 <span className="text-sm font-bold">Codeforces Max Rating</span>
               </div>
               <span className="text-lg font-black text-blue-600">1516 <span className="text-xs text-slate-400">(Specialist)</span></span>
             </div>
             <div className="flex justify-between items-center p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
               <div className="flex items-center gap-3">
-                <Trophy className="w-4 h-4 text-orange-500"/>
+                <Trophy className="w-4 h-4 text-orange-500" />
                 <span className="text-sm font-bold">LeetCode Max Rating</span>
               </div>
               <span className="text-lg font-black text-blue-600">1881 <span className="text-xs text-slate-400">(Knight)</span></span>
             </div>
-            <div className="flex items-center gap-4 p-4 bg-blue-600 text-white">
-              <Cloud className="w-5 h-5"/>
-              <span className="text-sm font-black uppercase tracking-wider text-center flex-1">AWS Certified Cloud Practitioner</span>
-            </div>
+            <a
+              href="https://www.credly.com/badges/cafe8ba1-3ad2-4ac8-8306-59142cd1128e"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex justify-between items-center p-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              <div className="flex items-center gap-4">
+                <Cloud className="w-5 h-5" />
+                <div>
+                  <p className="font-bold">AWS Certified Cloud Practitioner</p>
+                  <p className="text-xs text-blue-100">Amazon Web Services (AWS)</p>
+                </div>
+              </div>
+
+              <ExternalLink className="w-5 h-5" />
+            </a>
           </div>
         </section>
 
@@ -242,7 +264,7 @@ export default function Portfolio() {
           <div className="flex flex-col md:flex-row justify-between gap-6">
             <div className="flex gap-5">
               <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-full h-fit">
-                <GraduationCap className="w-6 h-6 text-blue-600"/>
+                <GraduationCap className="w-6 h-6 text-blue-600" />
               </div>
               <div>
                 <h3 className="font-bold text-xl leading-tight">IIIT Naya Raipur</h3>
